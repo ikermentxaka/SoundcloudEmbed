@@ -1,5 +1,6 @@
 *{
     z-index: 3;
+    overflow-x: hidden;
 }
 
 
@@ -56,9 +57,26 @@ img{
         transform: rotate(360deg);
     }
 }
+#toca{
+    animation: leve-rot;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+}
+@keyframes leve-rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+     0% {
+        transform: rotate(0deg);
+    }
+}
 
 iframe{
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 #recomendaciones{
@@ -66,9 +84,10 @@ iframe{
     width: 100%;
     border-collapse: collapse;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.623);
-
+    border-color: rgba(212, 212, 212, 0.623);
+    border-width: 1px;
 }
-.thyo{
+.thyo, .tdyo{
     text-align: left;
+    border: 1px solid rgba(212, 212, 212, 0.623);
 }
