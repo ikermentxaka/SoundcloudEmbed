@@ -1,3 +1,10 @@
 .sc-button sc-button-share soundHeader__shareButton sc-button-small{
     display: none;
 }
+header{
+    margin-inline: 1vw;
+    background-color: rgba(172, 172, 172, 0.37);
+    border-radius: 1em;
+    border-style: solid;
+    border-color: white;
+}
