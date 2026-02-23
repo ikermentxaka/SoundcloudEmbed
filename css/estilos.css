@@ -1,10 +1,57 @@
-.sc-button sc-button-share soundHeader__shareButton sc-button-small{
-    display: none;
+*{
+    z-index: 3;
 }
+
+
+/* <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name*/
+
+*{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  /*font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;*/
+}
+
 header{
-    margin-inline: 1vw;
-    background-color: rgba(172, 172, 172, 0.37);
-    border-radius: 1em;
+    /*margin-inline: 1px;*/
+    margin-block: 1vh;
+    background-color: rgba(230, 230, 230, 0.664);
+    border-radius: 0.5em;
     border-style: solid;
-    border-color: white;
+    border-color: rgba(255, 255, 255, 0.623);
+    border-width: 1px;
+    padding-inline: 2vw;
+    color:rgb(29, 29, 29);
+    backdrop-filter: blur(5px);
+
+}
+header p{
+    margin-top: 1px;
+}
+header h1{
+    margin-bottom: 0.5vh;
+}
+img{
+    position: absolute;
+    z-index: -1;
+   top:0;
+    width: 97%;
+    display:flex;
+    animation-name: rotacion;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+     animation-timing-function: linear;
+}
+@keyframes rotacion {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+iframe{
+    margin-top: 20vh;
 }
