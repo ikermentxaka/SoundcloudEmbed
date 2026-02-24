@@ -25,15 +25,15 @@ header{
     z-index: 30;
     left: -8px;
     width: calc(100% + 16px);
-    height: 20vh;
-    
+    height: 15vh;
+    padding-top:1vh;
     /*background-color: rgba(230, 230, 230, 0.288);
     border-radius: 0.5em;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.623);
     border-width: 0.1vh;*/
     background: #000000;
-    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 5%, rgba(255, 255, 255, 0) 100%);
     
     color:rgb(255, 255, 255);
     /*backdrop-filter: blur(3px);*/
