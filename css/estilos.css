@@ -2,7 +2,9 @@
     z-index: 3;
     overflow-x: hidden;
 }
-
+body{
+    margin-top: 0;
+}
 
 /* <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name*/
@@ -18,23 +20,36 @@
 
 header{
     /*margin-inline: 1px;*/
-    margin-block: 3vh;
-    background-color: rgba(230, 230, 230, 0.664);
+    top:0;
+    position: absolute;
+    z-index: 30;
+    left: -8px;
+    width: calc(100% + 16px);
+    height: 20vh;
+    
+    /*background-color: rgba(230, 230, 230, 0.288);
     border-radius: 0.5em;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.623);
-    border-width: 1px;
-    padding-inline: 2vw;
-    color:rgb(29, 29, 29);
-    backdrop-filter: blur(3px);
+    border-width: 0.1vh;*/
+    background: #000000;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    
+    color:rgb(255, 255, 255);
+    /*backdrop-filter: blur(3px);*/
     
 }
 header p{
     margin-top: 1px;
     margin-bottom: 5px;
-    font-size: 11pt;
+    font-size: 3vw;
+    font-weight: 300;
+    padding-inline: 5vw;
 }
 header h1{
+    padding-inline: 5vw;
+    font-size: 6vw;
+    font-weight: bold;
     margin-top: 5px;
     margin-bottom: 0.5vh;
 }
@@ -42,7 +57,7 @@ img{
     position: absolute;
     z-index: -1;
    top:0;
-    width: 97%;
+    width: 95%;
     display:flex;
     animation-name: rotacion;
     animation-iteration-count: infinite;
@@ -63,6 +78,7 @@ img{
     animation-duration: 9s;
     animation-timing-function: linear;
 }
+
 @keyframes leve-rot {
     0% {
         transform: rotate(0deg);
@@ -76,7 +92,7 @@ img{
 }
 
 iframe{
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 #recomendaciones{
@@ -86,6 +102,9 @@ iframe{
     border-style: solid;
     border-color: rgba(212, 212, 212, 0.623);
     border-width: 1px;
+}
+.thyo{
+    background-color: rgba(230, 230, 230, 0.664);
 }
 .thyo, .tdyo{
     text-align: left;
