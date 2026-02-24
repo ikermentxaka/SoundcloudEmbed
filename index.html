@@ -19,8 +19,8 @@
            </p>
     </header>
     
-    <img  src="src/Disco Brillos.png" alt="disco-giratorio" >
-    <img  src="src/DiscoEditado.png" alt="disco-giratorio" >
+    <img  src="src/Disco Brillos.png" alt="disco-giratorio" id="brillos">
+    <img  src="src/DiscoEditado.png" alt="disco-giratorio" id="disco" >
     <img  src="src/Tocadiscos-Elementos.png" alt="disco-giratorio" id="toca" >
 
     <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%3Aplaylists%3A2195653553%3Fsecret_token%3Ds-g6xOM5VSgwY&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
@@ -43,15 +43,32 @@
             <td class="tdyo">Molly</td>
         </tr>
     </table>
+
+<script src="https://w.soundcloud.com/player/api.js"></script>
 <script>
    // window.history.replaceState({}, document.title, "playlist-comunidad-1.html");
-    navigator.mediaSession.metadata = new MediaMetadata({
+    
+   navigator.mediaSession.metadata = new MediaMetadata({
   title: 'Orbain - Playlist de la comunidad.',
   artist: 'Varios selectores',
   artwork: [
     { src: 'src/DiscoEditado.png', sizes: '512x512', type: 'image/png' },
   ]
 });
+
+const iframe = document.querySelector("iframe");
+const widget = SC.Widget(iframe);
+
+const disco = document.getElementById("disco");
+
+widget.bind(SC.Widget.Events.PLAY, function() {
+  disco.style.animationPlayState = "running";
+});
+
+widget.bind(SC.Widget.Events.PAUSE, function() {
+  disco.style.animationPlayState = "paused";
+});
+
 </script>
 
 </body>

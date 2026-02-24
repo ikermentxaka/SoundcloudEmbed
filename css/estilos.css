@@ -72,6 +72,15 @@ img{
         transform: rotate(360deg);
     }
 }
+@keyframes quieto {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+    
+}
 #toca{
     animation: leve-rot;
     animation-iteration-count: infinite;
