@@ -48,7 +48,7 @@ header p{
 }
 header h1{
     padding-inline: 5vw;
-    font-size: 6vw;
+    font-size: 7vw;
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 0.5vh;
@@ -92,7 +92,7 @@ img{
 }
 
 iframe{
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 
 #recomendaciones{

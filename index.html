@@ -44,7 +44,13 @@
     </table>
 <script>
    // window.history.replaceState({}, document.title, "playlist-comunidad-1.html");
-
+    navigator.mediaSession.metadata = new MediaMetadata({
+  title: 'Orbain - Playlist de la comunidad.',
+  artist: 'Varios selectores',
+  artwork: [
+    { src: 'src/DiscoEditado.png', sizes: '512x512', type: 'image/png' },
+  ]
+});
 </script>
 
 </body>
